@@ -25,6 +25,9 @@ module.exports = (options = {}) => ({
   mode: options.mode,
   entry: options.entry,
   optimization: options.optimization,
+  externals: {
+    bull: 'commonjs2 bull'
+  },
   module: {
     rules: [
       {
